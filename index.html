@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <title>Project 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/40d520cb75.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Add jQuery (required for the datepicker) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add bootstrap-datepicker CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js" integrity="sha512-NmSTfudjn1FCaFMQ+f4xveBmwRJn5ep8Wu+YOeq+CeExhFtKvwhfKVXFX3tGxoGWxu8Fl83qm9nE8/Hkc1dWZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Main Nav -->
+        <nav class="navbar fixed-top bg-livewire">
+            <a class="navbar-brand d-flex align-items-center logo-animation" href="#HomePage">
+                <img src="images/liveWire.png" width="70" height="70" class="mr-4" alt="LiveWire Logo">
+                <span class="navbar-text text-white logo-text">LiveWire</span>
+            </a>
+            <ul class="nav nav-tabs text-white justify-content-end px-3">
+                <li class="nav-item p-2">
+                    <a href="#HomePage" class="nav-link text-white active" data-bs-toggle="tab">Home</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#BrandGuides" class="nav-link text-white" data-bs-toggle="tab">Brand Guides</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#DataVisualization" class="nav-link text-white" data-bs-toggle="tab">Data Visualization</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#PageLayouts" class="nav-link text-white" data-bs-toggle="tab">Page Layouts</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#UIComponents" class="nav-link text-white" data-bs-toggle="tab">UI Components</a>
+                </li>
+                </div>
+        </nav>
+        <!-- Hero Banner -->
+    </header>
+    <main class="tab-content">
+        <div class="livewire-banner">
+           <div class="banner-text">
+              <h1 class="text-center typography-primary fs-">LiveWire</h1>
+              <p class="text-center typography-secondary">Pattern Library</p>
+            </div>
+        </div>
+        <!-- Home Tab  -->
+        <div class="tab-pane active" id="HomePage">
+            <div class="row p-4 m-0">
+                <h1 class="text-center heading h1 heading-animation">Our Team </h1>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-sm-6 col-lg-4 my-auto">
+                            <div class="box shadow-sm p-4 team-card">
+                                <div class="image-wrapper mb-3">
+                                    <img class="img-fluid" src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=1480&t=st=1698185230~exp=1698185830~hmac=f5c2ea8ebe75e3d2b9282bd084d6a5a80c723516b6c518947a3e7a12bf0f2046" alt="..." />
+                                </div>
+                                <div class="box-desc">
+                                    <h5>Raid Murayan</h5>
+                                    <p>FrontEnd Developer</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 my-auto">
+                            <div class="box shadow-sm p-4 team-card">
+                                <div class="image-wrapper mb-3">
+                                    <img class="img-fluid" src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?w=1480&t=st=1698185434~exp=1698186034~hmac=4b04de5ffae8aec06b84db58ed8e73e9ca4c206acf89ac595d0ae46bed2b2e62" alt="..." />
+                                </div>
+                                <div class="box-desc">
+                                    <h5>Ashley Owen</h5>
+                                    <p>FrontEnd Developer</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 my-auto">
+                            <div class="box shadow-sm p-4 team-card">
+                                <div class="image-wrapper mb-3">
+                                    <img class="img-fluid" src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?w=1480&t=st=1698185434~exp=1698186034~hmac=4b04de5ffae8aec06b84db58ed8e73e9ca4c206acf89ac595d0ae46bed2b2e62" alt="..." />
+                                </div>
+                                <div class="box-desc">
+                                    <h5>Alexis Piercey</h5>
+                                    <p>FrontEnd Developer</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 my-3">
+                            <div class="box shadow-sm p-4 team-card">
+                                <div class="image-wrapper mb-3">
+                                    <img class="img-fluid" src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?w=1480&t=st=1698185434~exp=1698186034~hmac=4b04de5ffae8aec06b84db58ed8e73e9ca4c206acf89ac595d0ae46bed2b2e62" alt="..." />
+                                </div>
+                                <div class="box-desc">
+                                    <h5>Christine Bottone</h5>
+                                    <p>FrontEnd Developer</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 my-3"></div>
+                        <div class="col-sm-6 col-lg-4 my-3">
+                            <div class="box shadow-sm p-4 team-card">
+                                <div class="image-wrapper mb-3">
+                                    <img class="img-fluid" src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=1480&t=st=1698185230~exp=1698185830~hmac=f5c2ea8ebe75e3d2b9282bd084d6a5a80c723516b6c518947a3e7a12bf0f2046" alt="..." />
+                                </div>
+                                <div class="box-desc">
+                                    <h5>Cedrick Nkansah</h5>
+                                    <p>FrontEnd Developer</p>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- UI Components Tab -->
+        <div class="tab-pane fade" id="UIComponents">
+            <div class="row m-0">
+                <!-- Sidebar (25% width) -->
+                <div class="col-3 livewire-nav-side p-4">
+                    <h2 class="text-center text-white mt-2 heading">UI Components</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active my-2" data-bs-toggle="tab" href="#button">Button</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white my-2 nav-list " data-bs-toggle="tab" href="#alert">Alert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#model">Model</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#spinner">Spinner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#input">Input</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  my-2" data-bs-toggle="tab" href="#icons">Icons</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main Content (75% width) -->
+                <div class="col-9 mt-5 tab-content">
+                    <!-- button -->
+                    <div class="tab-pane active" id="button">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Button</h2>
+                            <div class="card-body bg-light text-dark">
+                                One method for users to initiate action and receive a response regarding pending tasks within an application, or to navigate between pages, is through the utilization of button styles. These button styles can be employed in various contexts such as forms, dialogues, and other interfaces, and offer support for multiple sizes and states
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-main btn-block btn-lg">Primary Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-main"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-main">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-main"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-info btn-block btn-lg">Info Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-info"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-info">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-info"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-success btn-block btn-lg">Success Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-success"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-success">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-success"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-secondary btn-block btn-lg">Secondary Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-secondary"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-secondary">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-success"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-light btn-block btn-lg">Light Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-light"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-light">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-light"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-warning btn-block btn-lg">Warning Button</button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#btn-warning"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="btn-warning">
+                                    <div class="card-body text-center">
+                                        &lt;button type="button" class="btn btn-warning"&gt; Button &lt;/button&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alert -->
+                    <div class="tab-pane fade" id="alert">
+                        <div class="card text-center p-1">
+                            <h2 class="h2 my-1 heading-animation">Alerts</h2>
+                            <div class="card-body bg-light text-dark">
+                                Alert is a mechanism for notifying or informing parts of a system about certain events, conditions, or changes in the system. It is often used for communication and coordination between different components of a software system.
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-4">
+                                <div class="alert alert-success text-center">
+                                    <i class="far fa-check-circle fa-lg" style="color: #ffffff;"></i> <strong>Success Alert !</strong>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#success"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="success">
+                                    <div class="card-body">
+                                        &lt;div class="alert alert-success"&gt; Message &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="alert alert-danger text-center">
+                                    <i class="fas fa-times-circle fa-lg" style="color: #ffffff;"></i> <strong>Error Alert !</strong>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#error"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2  collapse" id="error">
+                                    <div class="card-body">
+                                        &lt;div class="alert alert-danger"&gt; Message &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="alert alert-warning text-center">
+                                    <i class="fas fa-exclamation-circle fa-lg" style="color: #ffffff;"></i> <strong>Warning Alert !</strong>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#warning"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="warning">
+                                    <div class="card-body">
+                                        &lt;div class="alert alert-warning"&gt; Message &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Model -->
+                    <div class="tab-pane fade" id="model">
+                        <div class="row m-3">
+                            <div class="card text-center p-1">
+                                <h2 class="h2 my-1 heading-animation">Model</h2>
+                                <div class="card-body bg-light text-dark">
+                                    Modal is a user interface component that displays content,
+                                    information, or options in a pop-up or overlay, typically overlaid on
+                                    top of the main content of a webpage. Modals are used to focus the
+                                    user's attention on a specific task or piece of information while
+                                    dimming or graying out the background content to provide visual
+                                    hierarchy and reduce distractions.
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mt-4">
+                                <p class="text-center h4">Model for information</p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-danger btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#tipModel">
+                                        <i class="fa-solid fa-circle-info fa-lg show-code" style="color: #ffffff"></i>
+                                        Click Me
+                                    </button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#info-model"> Show Code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="info-model">
+                                    <div class="card-body text-center">
+                                        &lt;!-- Button --&gt; <br>
+                                        &lt;button
+                                        type="button"
+                                        class="btn btn-danger btn-lg btn-block"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#tipModel"
+                                        &gt; <br><br>
+                                        &lt;!-- Model --&gt; <br>
+                                        &lt;div class="modal" id="tipModel"&gt; <br>
+                                        &lt;div class="modal-dialog"&gt; <br>
+                                        &lt;div class="modal-content"&gt; <br><br>
+                                        &lt;!-- Modal Header --&gt; <br>
+                                        &lt;div class="modal-header modal-info"&gt; <br>
+                                        &lt;h4 class="modal-title"&gt;Modal Info&lt;/h4&gt; <br>
+                                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" &gt;&lt;/button&gt; &lt;/div&gt; <br> <br>
+                                        &lt;!-- Modal body --&gt;<br>
+                                        &lt;div class="modal-body"&gt;<br>
+                                        Information Here .&lt;/div <br> <br>
+                                        &lt;!-- Modal footer --&gt; <br>
+                                        &lt;div class="modal-footer"&gt; <br>
+                                        &lt;!-- Modal Save button --&gt;<br><br>
+                                        &lt;button type="button" class="btn btn-danger" data-bs-dismiss="modal" &gt; Close &lt;/button&gt; <br><br>
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mt-4">
+                                <p class="text-center h4">Model for Settings</p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#settingModel">
+                                        <i class="fa-solid fa-gear fa-lg" style="color: #ffffff"></i>
+                                        Click Me
+                                    </button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#setting-model"> Show Code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="setting-model">
+                                    <div class="card-body text-center">
+                                        &lt;!-- Button --&gt; <br>
+                                        &lt;button
+                                        type="button"
+                                        class="btn btn-primary btn-lg btn-block"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#setting-model"
+                                        &gt; <br><br>
+                                        &lt;!-- Model --&gt; <br>
+                                        &lt;div class="modal" id="setting-model"&gt; <br>
+                                        &lt;div class="modal-dialog"&gt; <br>
+                                        &lt;div class="modal-content"&gt; <br><br>
+                                        &lt;!-- Modal Header --&gt; <br>
+                                        &lt;div class="modal-header modal-info"&gt; <br>
+                                        &lt;h4 class="modal-title"&gt;Model setting &lt;/h4&gt; <br>
+                                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" &gt;&lt;/button&gt; &lt;/div&gt; <br> <br>
+                                        &lt;!-- Modal body --&gt;<br>
+                                        &lt;div class="modal-body"&gt;<br>
+                                        Settings inputs Here .&lt;/div <br> <br>
+                                        &lt;!-- Modal footer --&gt; <br>
+                                        &lt;div class="modal-footer"&gt; <br><br>
+                                        &lt;!-- Modal Save button --&gt;<br>
+                                        &lt;button type="button" class="btn btn-primary" data-bs-dismiss="modal" &gt; Save &lt;/button&gt; <br>
+                                        &lt;!-- Modal Close button --&gt;<br>
+                                        &lt;button type="button" class="btn btn-danger" data-bs-dismiss="modal" &gt; Close &lt;/button&gt; <br><br>
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mt-4">
+                                <p class="text-center h4">Modal for Media</p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-media btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#videoModel">
+                                        <i class="fa-solid fa-video fa-lg" style="color: #ffffff"></i>
+                                        Click Me
+                                    </button>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#media-model"> Show Code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="media-model">
+                                    <div class="card-body text-center">
+                                        &lt;!-- Button --&gt; <br>
+                                        &lt;button
+                                        type="button"
+                                        class="btn btn-media btn-lg btn-block"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#media-model"
+                                        &gt; <br><br>
+                                        &lt;!-- Model --&gt; <br>
+                                        &lt;div class="modal" id="media-model"&gt; <br>
+                                        &lt;div class="modal-dialog"&gt; <br>
+                                        &lt;div class="modal-content"&gt; <br><br>
+                                        &lt;!-- Modal Header --&gt; <br>
+                                        &lt;div class="modal-header modal-info"&gt; <br>
+                                        &lt;h4 class="modal-title"&gt;Media Model &lt;/h4&gt; <br>
+                                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" &gt;&lt;/button&gt; &lt;/div&gt; <br> <br>
+                                        &lt;!-- Modal body --&gt;<br>
+                                        &lt;div class="modal-body"&gt;<br>
+                                        Image / Video Here .&lt;/div <br> <br>
+                                        &lt;!-- Modal footer --&gt; <br>
+                                        &lt;div class="modal-footer"&gt; <br><br>
+                                        &lt;!-- Modal Close button --&gt;<br>
+                                        &lt;button type="button" class="btn btn-danger" data-bs-dismiss="modal" &gt; Close &lt;/button&gt; <br><br>
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spinners -->
+                    <div class="tab-pane fade p-3" id="spinner">
+                        <div class="card text-center p-1">
+                            <h2 class="h2 my-1 heading-animation">Spinners</h2>
+                            <div class="card-body bg-light text-dark">
+                                Spinners, also known as loading spinners or activity indicators, are a common user interface element used to provide feedback to users that a certain action is currently being performed by a system or application. They are designed to indicate that the system is busy processing a request, retrieving data, or performing some other task that might take a variable amount of time. Spinners serve several important functions in user interface design.
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <div class="sp sp-circle"></div>
+                                <h5 class="text-center">Circle</h5>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#circle"> Show Code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="circle">
+                                    <div class="card-body text-center">
+                                        &lt;div class="sp sp-circle"&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="sp sp-wave"></div>
+                                <h5 class="text-center">Wave</h5>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#wave"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="wave">
+                                    <div class="card-body text-center">
+                                        &lt;div class="sp sp-wave"&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="sp sp-sphere"></div>
+                                <h5 class="text-center">Sphere</h5>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#sphere"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="sphere">
+                                    <div class="card-body text-center">
+                                        &lt;div class="sp sp-sphere"&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="sp sp-hydrogen"></div>
+                                <h5 class="text-center">Hydrogen</h5>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#hydrogen"> Show code <i class="fa-solid fa-code"></i> </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="hydrogen">
+                                    <div class="card-body text-center">
+                                        &lt;div class="sp sp-Hydrogen"&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Input -->
+                    <div class="tab-pane fade" id="input">
+                        <div class="card text-center p-1">
+                            <h2 class="h2 my-1 heading-animation">Inputs</h2>
+                            <div class="card-body bg-light text-dark">
+                                It is user interface elements that allow users to enter data or provide input in a software application. Design patterns are established solutions to common design problems, and they can be applied to various aspects of software development, including user interface design.
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                    <span class="input-group-text">@example.com</span>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#email-input"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="email-input">
+                                    <div class="card-body">
+                                        &lt;div class="input-group input-group-lg"&gt; <br>
+                                        &lt;input type="text" class="form-control" placeholder="Your Email"&gt;<br>
+                                        &lt;span class="input-group-text"&gt;@example.com&lt;/span&gt;<br>
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control form-control-lg" placeholder="Normal input">
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#normal-input"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="normal-input">
+                                    <div class="card-body">
+                                        &lt;input type="text" class="form-control form-control-lg" placeholder="Normal input"&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6">
+                                <select class="form-select form-select-lg" aria-label="Select an option">
+                                    <option selected>Choose an option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#dropdown-input"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="dropdown-input">
+                                    <div class="card-body">
+                                        &lt;select class="form-select form-select-lg" aria-label="Select an option"&gt;<br>
+                                        &lt;option selected&gt;Choose an option&lt;/option&gt;<br>
+                                        &lt;option value="1"&gt;Option 1&lt;/option&gt;<br>
+                                        &lt;option value="2"&gt;Option 2&lt;/option&gt;<br>
+                                        &lt;option value="3"&gt;Option 3&lt;/option&gt;<br>
+                                        &lt;/select&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Select a Date" id="datepicker">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-calendar" style="color: #fbfbfb;"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#date-input"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center my-2 collapse" id="date-input">
+                                    <div class="card-body">
+                                        &lt;div class="input-group"&gt;<br>
+                                        &lt;input type="text" class="form-control" placeholder="Select a Date" id="datepicker"&gt;<br>
+                                        &lt;div class="input-group-append"&gt;<br>
+                                        &lt;span class="input-group-text"&gt;<br>
+                                        &lt;i class="fa fa-calendar" style="color: #fbfbfb;"&gt;&lt;/i&gt;<br>
+                                        &lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Icons -->
+                    <div class="tab-pane fade" id="icons">
+                        <div class="card text-center p-1">
+                            <h2 class="h2 my-1 heading-animation">Icons</h2>
+                            <div class="card-body bg-light text-dark">
+                                Icons are fundamental elements in user interfaces that serve as visual symbols to convey information, guide user actions, and enhance the overall user experience.
+                                They play a vital role in modern UI/UX design
+                            </div>
+                        </div>
+                        <div class="row mt-2 p-3">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-house fa-2xl" style="color: #0f0f0f;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-home">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="icon-home">
+                                    <div class="card-body text-center">
+                                        &lt;i class=&quot;fa-solid fa-house &quot;&gt;&lt;/i&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-gear fa-2xl" style="color: #000000;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-cdoe" data-bs-toggle="collapse" data-bs-target="#icon-setting">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="icon-setting">
+                                    <div class="card-body text-center">
+                                        &lt;i class=&quot;fa-solid fa-gear &quot;&gt;&lt;/i&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-star fa-2xl" style="color: #000000;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-star">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="icon-star">
+                                    <div class="card-body text-center">
+                                        &lt;i class=&quot;fa-solid fa-starl&quot;&gt;&lt;/i&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-heart fa-2xl" style="color: #050505;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-heart">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="icon-heart">
+                                    <div class="card-body text-center">
+                                        &lt;i class=&quot;fa-solid fa-heart &quot;&gt;&lt;/i&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 p-3">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-thumbs-up fa-2xl" style="color: #000000;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-thumbs-up">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                    <div class="card text-center mt-2 collapse" id="icon-thumbs-up">
+                                        <div class="card-body text-center">
+                                            &lt;i class=&quot;fa-solid fa-thumbs-up &quot;&gt;&lt;/i&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #030303;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-arrow-right">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                    <div class="card text-center mt-2 collapse" id="icon-arrow-right">
+                                        <div class="card-body text-center">
+                                            &lt;i class=&quot;fa-solid fa-arrow-right &quot;&gt;&lt;/i&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-arrow-left">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                    <div class="card text-center mt-2 collapse" id="icon-arrow-left">
+                                        <div class="card-body text-center">
+                                            &lt;i class=&quot;fa-solid fa-arrow-left &quot;&gt;&lt;/i&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-video fa-2xl" style="color: #000000;"></i>
+                                <div class="text-center cursor-pointer mt-3">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#icon-youtube">
+                                        Show code <i class="fa-solid fa-code"></i>
+                                    </i>
+                                    <div class="card text-center mt-2 collapse" id="icon-youtube">
+                                        <div class="card-body text-center">
+                                            &lt;i class=&quot;fa-solid fa-youtube&quot;&gt;&lt;/i&gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand Guides  -->
+        <div class="tab-pane fade" id="BrandGuides">
+            <div class="row m-0">
+                <div class="col-3 livewire-nav-side p-4">
+                    <h2 class="text-center text-white mt-2 heading">Brand Guides</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active my-2" data-bs-toggle="tab" href="#getStarted">Getting Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#typography">Typography</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#colors">Colors</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9 mt-3 tab-content">
+                    <!-- get Starting tab -->
+                    <div class="tab-pane active" id="getStarted">
+                        <div class="row m-3">
+                            <div class="col-12">
+                                <div class="card text-center p-1">
+                                    <h2 class="h2 my-1 heading-animation">Getting Started</h2>
+                                    <div class="card-body bg-light text-dark">
+                                        Welcome to our design pattern library,
+                                        where we provide a comprehensive set of design
+                                        patterns and resources to help you streamline
+                                        your software development process. In this guide,
+                                        we'll provide an overview of our design pattern
+                                        library, explain how to download and use it,
+                                        offer basic templates and examples, and provide
+                                        additional resources to help you make the most of our patterns.
+                                    </div>
+                                </div>
+                                <div class="container-fluid text-center my-5">
+                                    <div class="alert alert-success">
+                                        <strong class="h5">To get started, make sure you do the following steps </strong> <span class="badge bg-white">5 Steps</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        <p class="5">Step 1</p>
+                                    </div>
+                                    <div class="toast-body text-center">
+                                        Add the HTML5 doctype
+                                        <div class="text-center cursor-pointer mt-1">
+                                            <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#step1">
+                                                Show code <i class="fa-solid fa-code"></i>
+                                            </i>
+                                            <div class="card text-center mt-3 collapse " id="step1">
+                                                <div class="card-header text-center">
+                                                    &lt;!DOCTYPE html&gt;<br>
+                                                    &lt;html lang="en&gt;<br>
+                                                    &lt;head&gt;<br>
+                                                    &lt;title&gt; LiveWire &lt;/title&gt;<br>
+                                                    &lt;meta charset="utf-8"&gt;<br>
+                                                    &lt;/head&gt;<br>
+                                                    &lt;/html&gt;<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        <p class="5">Step 2</p>
+                                    </div>
+                                    <div class="toast-body text-center">
+                                        Set the viewport properties
+                                        <div class="text-center cursor-pointer mt-1">
+                                            <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#step2">
+                                                Show code <i class="fa-solid fa-code"></i>
+                                            </i>
+                                            <div class="card text-center mt-3 collapse " id="step2">
+                                                <div class="card-header text-center">
+                                                    &lt; meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        <p class="5">Step 3</p>
+                                    </div>
+                                    <div class="toast-body text-center">
+                                        Add LiveWire CDN Design Libraries
+                                        <div class="text-center cursor-pointer mt-1">
+                                            <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#step3">
+                                                Show code <i class="fa-solid fa-code"></i>
+                                            </i>
+                                            <div class="card text-center mt-3 collapse " id="step3">
+                                                <div class="card-header text-center">
+                                                    &lt;!-- Latest compiled and minified CSS --&gt;<br>
+                                                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br>
+                                                    &lt;!-- Latest compiled JavaScript --&gt;<br>
+                                                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-4">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        <p class="5">Step 4</p>
+                                    </div>
+                                    <div class="toast-body text-center">
+                                        Set up Containers
+                                        <div class="text-center cursor-pointer mt-1">
+                                            <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#step4">
+                                                Show code <i class="fa-solid fa-code"></i>
+                                            </i>
+                                            <div class="card text-center mt-3 collapse " id="step4">
+                                                <div class="card-header text-center">
+                                                    &lt;!-- fixed width container --&gt; <br>
+                                                    &lt; class="container">Content &gt; <br>
+                                                    &lt;!-- full width container -- &gt; <br>
+                                                    &lt;class="container-fluid">Content &gt;<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-4"></div>
+                            <div class="col-4 mt-4">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        <p class="5">Step 5</p>
+                                    </div>
+                                    <div class="toast-body text-center">
+                                        Add LiveWire CDN Chart Libraries
+                                        <div class="text-center cursor-pointer mt-1">
+                                            <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#step5">
+                                                Show code <i class="fa-solid fa-code"></i>
+                                            </i>
+                                            <div class="card text-center mt-3 collapse " id="step5">
+                                                <div class="card-header text-center">
+                                                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ=="&gt;&lt;/script&gt;<br> <br>
+                                                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js" integrity="sha512-NmSTfudjn1FCaFMQ+f4xveBmwRJn5ep8Wu+YOeq+CeExhFtKvwhfKVXFX3tGxoGWxu8Fl83qm9nE8/Hkc1dWZg=="&gt;&lt;/script&gt;
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Brand Guides typography  -->
+                    <div class="tab-pane" id="typography">
+                        <div class="row m-3">
+                            <div class="col-12">
+                                <div class="card text-center p-1">
+                                    <h2 class="h2 my-1 heading-animation">Typography</h2>
+                                    <div class="card-body bg-light text-dark">
+                                        Typography is a primary means of communicating textual content in a design. It conveys the message and guides the user through the information presented. Through font sizes, styles, and colors, typography establishes a hierarchy that tells the viewer what's most important.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 m-3">
+                                <p class="h2 p-3">
+                                    This is <span class="typography-primary heading-animation">Azonix</span> our secondary typeface, specifically utilized for chart data and dashboard headers
+                                    for <span class="typography-primary heading-animation">LiveWire</span>.
+                                </p>
+                            </div>
+                            <hr class="line">
+                            <div class="col-12 m-3">
+                                <p class="h2 p-3">
+                                    This is <span class="typography-secondary heading-animation">Merriweather</span>
+                                    our beloved typeface. It is used consistently across all assets and
+                                    materials for <span class="typography-secondary heading-animation">LiveWire</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Brand Guides Colors  -->
+                    <div class="tab-pane fade" id="colors">
+                        <!-- Colors Main-->
+                        <div class="row m-3">
+                            <div class="card text-center p-1 my-3">
+                                <h2 class="h2 my-1 element-heading heading-animation">Colors</h2>
+                                <div class="card-body bg-light text-dark">
+                                    Color plays a significant role in design patterns, which are recurring solutions to common design problems in the field of software development. Design patterns primarily pertain to software design and architecture, and color is not a fundamental aspect of these patterns. However, color can be a factor in design patterns in the context of graphic or user interface design.
+                                </div>
+                            </div>
+                            <div class="color-lable">
+                                Triad Colors
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-brand">Brand Color - Red</div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color--brand"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-color">
+                                        <p> Hex: #FF0009 </p>
+                                        <p> R: 255 G: 0 B: 9 </p>
+                                        <p>H: 358 S: 100 B: 50 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-secondary--yellow">Secondary Color - Yellow
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-secondary--yellow"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-secondary--yellow">
+                                        <p> Hex: #FFFB00</p>
+                                        <p> R: 255 G: 251 B: 0 </p>
+                                        <p> H: 59 S: 100 B: 50 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-secondary--blue">Secondary Color - Blue
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-secondary--blue"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-secondary--blue">
+                                        <p> Hex: #0011FF </p>
+                                        <p> R: 0 G: 17 B: 255 </p>
+                                        <p>H: 236 S: 100 B: 50 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="color-lable">
+                                Hue Colors
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightestRed">Lightest Hue Color - Red</div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightestRed"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightestRed">
+                                        <p> Hex: #FFBFC1 </p>
+                                        <p> R: 255 G: 191 B: 193 </p>
+                                        <p>H: 358 S: 25 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightestYellow">Lightest Hue Color - Yellow
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightestYellow"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightestYellow">
+                                        <p> Hex: #FFFEBF </p>
+                                        <p> R: 255 G: 254 B: 191 </p>
+                                        <p>H: 59 S: 25 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightestBlue">Lightest Hue Color - Blue
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightestBlue"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightestBlue">
+                                        <p> Hex: #BFC3FF </p>
+                                        <p> R: 191 G: 195 B: 255 </p>
+                                        <p>H: 236 S: 25 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightRed">Light Hue Color - Red</div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightRed"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightRed">
+                                        <p> Hex: #FF4046 </p>
+                                        <p> R: 255 G: 64 B: 70 </p>
+                                        <p>H: 358 S: 75 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightYellow">Light Hue Color - Yellow
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightYellow"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightYellow">
+                                        <p> Hex: #FFFC40 </p>
+                                        <p> R: 255 G: 252 B: 64 </p>
+                                        <p>H: 59 S: 75 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--lightBlue">Light Hue Color - Blue
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--lightBlue"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--lightBlue">
+                                        <p> Hex: #404CFF </p>
+                                        <p> R: 64 G: 76 B: 255 </p>
+                                        <p>H: 236 S: 75 B: 100 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkRed">Dark Hue Color - Red
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkRed"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkRed">
+                                        <p> Hex: #BF0007 </p>
+                                        <p> R: 191 G: 0 B: 7 </p>
+                                        <p>H: 358 S: 100 B: 75 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkYellow">Dark Hue Color - Yellow
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkYellow"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkYellow">
+                                        <p> Hex: #BFBC00 </p>
+                                        <p> R: 191 G: 188 B: 0 </p>
+                                        <p>H: 59 S: 100 B: 75 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkBlue">Dark Hue Color - Blue
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkBlue"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkBlue">
+                                        <p> Hex: #000DBF </p>
+                                        <p> R: 0 G: 13 B: 191 </p>
+                                        <p>H: 236 S: 100 B: 75 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkestRed">Darkest Hue Color - Red
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkestRed"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkestRed">
+                                        <p> Hex: #400002 </p>
+                                        <p> R: 64 G: 0 B: 2 </p>
+                                        <p>H: 358 S: 100 B: 25 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkestYellow">Darkest Hue Color - Yellow
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkestYellow"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkestYellow">
+                                        <p> Hex: #403F00 </p>
+                                        <p> R: 64 G: 63 B: 0 </p>
+                                        <p>H: 59 S: 100 B: 25 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--darkestBlue">Darkest Hue Color - Blue
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-hue--darkestBlue"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--darkestBlue">
+                                        <p> Hex: #000440 </p>
+                                        <p> R: 0 G: 4 B: 64 </p>
+                                        <p>H: 236 S: 100 B: 25 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="color-lable">
+                                Functional Colors
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-functional--white">Functional Color - White
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-functional--white"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-functional--white">
+                                        <p> Hex: #FFF6F6 </p>
+                                        <p> R: 255 G: 246 B: 246 </p>
+                                        <p>H: 0 S: 100 B: 98 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-functional--gray">Functional Color - Gray
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-functional--gray"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-functional--gray">
+                                        <p> Hex: #B8BFC6 </p>
+                                        <p> R: 184 G: 191 B: 198 </p>
+                                        <p>H: 210 S: 7 B: 78 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header-functional--black">Functional Color - Black
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color-functional--black"></div>
+                                    </div>
+                                    <div class="card-footer card-footer-functional--black">
+                                        <p> Hex: #43A1D5 </p>
+                                        <p> R: 4 G: 13 B: 18 </p>
+                                        <p>H: 201 S: 64 B: 4 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="color-lable">
+                                Error Handling Colors
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--orange">Warning Color - Orange
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color--orange"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--orange">
+                                        <p> Hex: #CE8500 </p>
+                                        <p> R: 206 G: 133 B: 0 </p>
+                                        <p>H: 39 S: 100 B: 40 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--success">Success Color - Green
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color--success"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--success">
+                                        <p> Hex: #3CB371 </p>
+                                        <p> R: 60 G: 179 B: 113 </p>
+                                        <p>H: 147 S: 50 B: 47 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card text-center">
+                                    <div class="card-header card-header--error">Error Color - Red
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="circle-color circle-color--error"></div>
+                                    </div>
+                                    <div class="card-footer card-footer--error">
+                                        <p> Hex: #FF0108 </p>
+                                        <p> R: 255 G: 1 B: 8 </p>
+                                        <p>H: 358 S: 100 B: 50 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Layouts Tab  -->
+        <div class="tab-pane fade" id="PageLayouts">
+            <div class="row m-0">
+                <div class="col-3 livewire-nav-side p-4">
+                    <h2 class="text-center text-white mt-2 heading">Page Layouts</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active my-2" data-bs-toggle="tab" href="#gridLayout">Grid Layout</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#content">Content</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- page layout grid tab  -->
+                <div class="col-9 mt-3 tab-content">
+                    <div class="tab-pane active" id="gridLayout">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Grid Layout</h2>
+                            <div class="card-body bg-light text-dark">
+                                Grid layout is a fundamental design concept used in various creative fields, including graphic design, web design, architecture, and more. It involves the systematic arrangement of elements in a grid pattern, which provides structure, organization, and visual harmony to a design. Grid layouts help designers align content,
+                                maintain consistency, and create a balanced composition.
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-12 grid-col">Colum 1 OF 1</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-12"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-12">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-12"&gt; Colum 1 OF 1 &lt;/div&gt;
+                                        <br>&lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-6 grid-col">Colum 1 OF 2</div>
+                            <div class="col-6 grid-col">Colum 2 OF 2</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-2"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-2">
+                                <div class="card text-center">
+                                    <div class="card-body"> &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-6"&gt; Colum 1 OF 2 &lt;/div&gt;<br>
+                                        &lt;div class="col-6"&gt; Colum 2 OF 2 &lt;/div&gt;
+                                        <br> &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4 grid-col">Colum 1 OF 3</div>
+                            <div class="col-4 grid-col">Colum 2 OF 3</div>
+                            <div class="col-4 grid-col">Colum 3 OF 3</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-3"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-3">
+                                <div class="card text-center">
+                                    <div class="card-body"> &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-4"&gt; Colum 1 OF 3 &lt;/div&gt;<br>
+                                        &lt;div class="col-4"&gt; Colum 2 OF 3 &lt;/div&gt;<br>
+                                        &lt;div class="col-4"&gt; Colum 3 OF 3 &lt;/div&gt;
+                                        <br> &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-3 grid-col">Colum 1 OF 4</div>
+                            <div class="col-3 grid-col">Colum 2 OF 4</div>
+                            <div class="col-3 grid-col">Colum 3 OF 4</div>
+                            <div class="col-3 grid-col">Colum 4 OF 4</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-4"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-4">
+                                <div class="card text-center">
+                                    <div class="card-body"> &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-3"&gt; Colum 1 OF 4 &lt;/div&gt;<br>
+                                        &lt;div class="col-3"&gt; Colum 2 OF 4 &lt;/div&gt;<br>
+                                        &lt;div class="col-3"&gt; Colum 3 OF 4 &lt;/div&gt;<br>
+                                        &lt;div class="col-3"&gt; Colum 4 OF 4 &lt;/div&gt;
+                                        <br> &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-2 grid-col">Colum 1 OF 2</div>
+                            <div class="col-10 grid-col">Colum 2 OF 2</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-2-1"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-2-1">
+                                <div class="card text-center">
+                                    <div class="card-body"> &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-2"&gt; Colum 1 OF 2 &lt;/div&gt;<br>
+                                        &lt;div class="col-10"&gt; Colum 2 OF 2 &lt;/div&gt;
+                                        <br> &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4 grid-col">Colum 1 OF 2</div>
+                            <div class="col-8 grid-col">Colum 2 OF 2</div>
+                            <div class="text-center cursor-pointer">
+                                <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#grid-2-2"> Show Code <i class="fa-solid fa-code"></i></i>
+                            </div>
+                            <div class="col-12 mt-3 collapse" id="grid-2-2">
+                                <div class="card text-center">
+                                    <div class="card-body"> &lt;div class="row"&gt;<br>
+                                        &lt;div class="col-4"&gt; Colum 1 OF 2 &lt;/div&gt;<br>
+                                        &lt;div class="col-8"&gt; Colum 2 OF 2 &lt;/div&gt;
+                                        <br> &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- page layout content tab  -->
+                    <div class="tab-pane fade" id="content">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Content</h2>
+                            <div class="card-body bg-light text-dark">
+                                The content layout comprises a combination of visuals, including images and embedded videos,
+                                along with structured data presented in tables.
+                            </div>
+                        </div>
+                        <div class="row m-5">
+                            <div class="col-6">
+                                <h3 class="text-center my-5">Image Card</h3>
+                                <div class="content-card content-card--image">
+                                    <div class="content-card_content">
+                                        <div class="content-card_title">LiveWire Image Container</div>
+                                        <div class="content-card_desc">Check out this visual content! </div>
+                                    </div>
+                                    <div class="content-card_bottom_shadow"></div>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#image-card"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="image-card">
+                                    <div class="card-body text-center">
+                                        &lt;div class=&quot;content-card content-card--image&quot;&gt;<br>
+                                        &lt;div class=&quot;content-card_content&quot;&gt;<br>
+                                        &lt;div class=&quot;content-card_title&quot;&gt;LiveWire Image Container&lt;/div&gt;<br>
+                                        &lt;div class=&quot;content-card_desc&quot;&gt;Check out this visual content!&lt;/div&gt;<br>
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;content-card_bottom_shadow&quot;&gt;&lt;/div&gt;<br>
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h3 class="text-center my-5">Video Card</h3>
+                                <div class="content-card content-card--video">
+                                    <video controls>
+                                        <source src="./images/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="content-card_content">
+                                        <div class="content-card_title">Video Card</div>
+                                        <div class="content-card_desc">Check out this cool video!</div>
+                                    </div>
+                                    <div class="content-card_bottom_shadow"></div>
+                                </div>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#video-card"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="video-card">
+                                    <div class="card-body text-center">
+                                        &lt;div class=&quot;content-card content-card--video&quot;&gt;<br>
+                                        &lt;video controls&gt;<br>
+                                        &lt;source src=&quot;./images/video-card.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+                                        &lt;/video&gt;
+                                        &lt;div class=&quot;content-card_content&quot;&gt;<br>
+                                        &lt;div class=&quot;content-card_title&quot;&gt;Video Card&lt;/div&gt;<br>
+                                        &lt;div class=&quot;content-card_desc&quot;&gt;Check out this cool video!&lt;/div&gt;<br>
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;content-card_bottom_shadow&quot;&gt;&lt;/div&gt;<br>
+                                        &lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-4">
+                            <div class="col-12">
+                                <h2 class="text-center h2 my-3">Table Structure</h2>
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-heading">Firstname</th>
+                                            <th class="table-heading">Lastname</th>
+                                            <th class="table-heading">Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Raid</td>
+                                            <td>Murayan</td>
+                                            <td>Rmurayan@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alexis</td>
+                                            <td>Piercey</td>
+                                            <td>APiercey@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashley</td>
+                                            <td>Owen</td>
+                                            <td>AOwen@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Christine</td>
+                                            <td>Bottone</td>
+                                            <td>CBottone@example.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-center cursor-pointer">
+                                    <i class="fa-solid fa-code show-code" data-bs-toggle="collapse" data-bs-target="#table"> Show code <i class="fa-solid fa-code"></i></i>
+                                </div>
+                                <div class="card text-center mt-2 collapse" id="table">
+                                    <div class="card-body text-center">
+                                        &lt;table class="table table-hover table-bordered"&gt; <br>
+                                        &lt;thead&gt;<br>
+                                        &lt;tr&gt;<br>
+                                        &lt;th class="table-heading"&gt;Firstname&lt;/th&gt;<br>
+                                        &lt;th class="table-heading"&gt;Lastname&lt;/th&gt;<br>
+                                        &lt;th class="table-heading"&gt;Email&lt;/th&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                        &lt;/thead&gt;<br>
+                                        &lt;tbody&gt;<br>
+                                        &lt;tr&gt;<br>
+                                        &lt;td&gt;Raid&lt;/td&gt;<br>
+                                        &lt;td&gt;Murayan&lt;/td&gt;<br>
+                                        &lt;td&gt;Rmurayan@example.com&lt;/td&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                        &lt;/tbody&gt;<br>
+                                        &lt;/table&gt;<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Data Visualization tab  -->
+        <div class="tab-pane fade" id="DataVisualization">
+            <div class="row m-0">
+                <!-- Sidebar (25% width) -->
+                <div class="col-3 livewire-nav-side p-4">
+                    <h2 class="text-center text-white mt-2 heading">Data Visualizations</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active my-2" data-bs-toggle="tab" href="#lineGraphs">Line Graphs</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white my-2 nav-list " data-bs-toggle="tab" href="#barGraphs">Bar Graphs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#singleValue">Single Value Charts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#areaCharts">Area Charts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white my-2" data-bs-toggle="tab" href="#scatterPlots">Scatter Plots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  my-2" data-bs-toggle="tab" href="#pieCharts">Pie Charts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white  my-2" data-bs-toggle="tab" href="#donutCharts">Donut Charts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9 mt-5 tab-content">
+                    <!-- Line Graphs -->
+                    <div class="tab-pane active" id="lineGraphs">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Line Graphs</h2>
+                            <div class="card-body bg-light text-dark">
+                                Line graphs are used for the comparison of continous data types. They are typically used to track the change in value of multiple objects over a time period.
+                            </div>
+                        </div>
+                        <div id="lineGraphContainer" class="text-center m-5"></div>
+                    </div>
+                    <!-- Bar Graphs -->
+                    <div class="tab-pane fade" id="barGraphs">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Bar Graphs</h2>
+                            <div class="card-body bg-light text-dark">
+                                Bar graphs are used for the comparison of discontinuous data across one or more groups. You can have regular bar charts which compared a single value across different groups, or grouped bar charts which compare multiple data values across different groups.
+                            </div>
+                        </div>
+                        <div id="barGraphContainer" class="text-center m-5"></div>
+                    </div>
+                    <!-- Single Value Charts -->
+                    <div class="tab-pane fade" id="singleValue">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Single Value Charts</h2>
+                            <div class="card-body bg-light text-dark">
+                                Single value charts are unique in that they display only a single value. They can be represented in multiple ways, including progress bars, single results, or results with associated changes. They are great for displaying important values, significant findings, or results of computation.
+                            </div>
+                        </div>
+                        <div class="row set-size charts-container m-5">
+                            <div class="col-4">
+                                <div class="pie-wrapper progress-30">
+                                    <span class="label">30<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pie-wrapper progress-60">
+                                    <span class="label">60<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="pie-wrapper progress-90">
+                                    <span class="label">90<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper progress-45 style-2">
+                                    <span class="label">45<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper progress-75 style-2">
+                                    <span class="label">75<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper progress-95 style-2">
+                                    <span class="label">95<span class="smaller">%</span></span>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper pie-wrapper--solid progress-65">
+                                    <span class="label">65<span class="smaller">%</span></span>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper pie-wrapper--solid progress-25">
+                                    <span class="label">25<span class="smaller">%</span></span>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="pie-wrapper pie-wrapper--solid progress-88">
+                                    <span class="label">88<span class="smaller">%</span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Area Charts -->
+                    <div class="tab-pane fade" id="areaCharts">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Area Charts</h2>
+                            <div class="card-body bg-light text-dark">
+                                Area charts are used for displaying the composition of a whole, with continuous data. These types of charts are great for showing how different groups make up the whole composition and how they change over time.
+                            </div>
+                        </div>
+                        <div id="areaChartContainer" class="text-center m-5"></div>
+                    </div>
+                    <!-- Scatter Plots -->
+                    <div class="tab-pane fade" id="scatterPlots">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Scatter Plots</h2>
+                            <div class="card-body bg-light text-dark">
+                                Scatter plots are used for showing the relationship between two variables. Each axis will represent one of these variables and multiple points will be plotted against each axis. Typically scatter plots aim to find a trend: linear, non-linear, positive, or negative. Statistical analysis can be performed to see how well they fit this pattern.
+                            </div>
+                        </div>
+                        <div id="scatterPlotContainer" class="text-center m-5"></div>
+                    </div>
+                    <!-- Pie Charts -->
+                    <div class="tab-pane fade" id="pieCharts">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Pie Charts</h2>
+                            <div class="card-body bg-light text-dark">
+                                Pie charts are used when you would like to graph the composition of groups within a whole with static data. The entire chart represents 100% and each group within the pie takes up a percentage of that whole.
+                            </div>
+                        </div>
+                        <div id="pieChartContainer" class="text-center"></div>
+                    </div>
+                    <!-- Donut Charts -->
+                    <div class="tab-pane fade" id="donutCharts">
+                        <div class="card text-center p-3">
+                            <h2 class="h2 my-1 heading-animation">Donut Charts</h2>
+                            <div class="card-body bg-light text-dark">
+                                Donut charts are similar to pie charts in that they graph the composition of groups within a whole with static data. They are different in their visual appearance and the types of values they can hold. Donut charts always have an empty circle in the middle. As well, they are able to chart both positive and negative values, however it this circumstance they would not be representing composition of a whole.
+                            </div>
+                        </div>
+                        <svg id="donutChartContainer"></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-light p-1 text-center">
+        <p>&copy; 2023 Internet & Web Applications. INFO-3171 - Data Visualization & UI</p>
+    </footer>
+    <!-- Scipts -->
+    <script src="./scripts/scripts.js"></script>
+    <div class="modal" id="tipModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header modal-info">
+                    <h4 class="modal-title">Modal Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio itaque accusamus illum. Non voluptatibus eligendi enim libero nemo dignissimos cumque itaque sit delectus? Sapiente pariatur dolorum blanditiis odio ducimus.
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="settingModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header modal-setting">
+                    <h4 class="modal-title">Setting Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked />
+                                <label class="form-check-label" for="check1">Option 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something" />
+                                <label class="form-check-label" for="check2">Option 2</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">Option 3</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked />
+                                <label class="form-check-label" for="mySwitch">Dark Mode</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked />Option 1
+                                <label class="form-check-label" for="radio1"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" />Option 2
+                                <label class="form-check-label" for="radio2"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Save
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-lg fade" id="videoModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header media-model">
+                    <h4 class="modal-title">Media Model</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe class="video" src="images/video.mp4">
+                    </iframe>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/dountChart.js"></script>
+    <script src="./scripts/chartScripts.js"></script>
+    <script src="./scripts/pieChart.js"></script>
+</body>
+
+</html>
